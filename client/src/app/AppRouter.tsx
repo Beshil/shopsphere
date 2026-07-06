@@ -1,10 +1,11 @@
+import HomePage from "@/pages/HomePage";
+import LoginPage from "@/pages/LoginPage";
+import NotFoundPage from "@/pages/NotFoundPage";
+import ProductsPage from "@/pages/ProductsPage";
+import ProfilePage from "@/pages/ProfilePage";
+import RegisterPage from "@/pages/RegisterPage";
 import { Route, Routes } from "react-router-dom";
-import HomePage from "../pages/HomePage";
-import LoginPage from "../pages/LoginPage";
-import NotFoundPage from "../pages/NotFoundPage";
-import ProfilePage from "../pages/ProfilePage";
-import RegisterPage from "../pages/RegisterPage";
-import ProductsPage from "../pages/ProductsPage";
+
 
 const AppRouter = () => {
   return (

@@ -11,7 +11,7 @@ export default tseslint.config({
     files: ['**/*.{ts,tsx}'],
     extends: [
       js.configs.recommended,
-      tseslint.configs.recommended,
+      ...tseslint.configs.recommended,
       reactHooks.configs.flat.recommended,
       reactRefresh.configs.vite,
     ],
@@ -19,11 +19,7 @@ export default tseslint.config({
       ecmaVersion: 2023,
       globals: globals.browser,
     },
-    plugins:{
-      "react-hooks": reactHooks,
-    },
     rules:{
-      ...reactHooks.configs.recommended.rules,
       "react-refresh/only-export-components":[
         "warn",
         {

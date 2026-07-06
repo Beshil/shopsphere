@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "lint:fix": " eslint . --fix",
     "format": "prettier --write .",
-    "format:check": "prettier --ckeck ."
+    "format:check": "prettier --check ."
   },
   "dependencies": {
     "react": "^19.2.7",

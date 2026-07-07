@@ -1,0 +1,11 @@
+body {
+  font-family:
+    Inter,
+    system-ui,
+    sans-serif;
+
+  font-size: var(--font-md);
+  color: var(--color-text-primary);
+  background: var(--color-background);
+  line-height: 1.5;
+}

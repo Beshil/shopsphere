@@ -1,20 +1,27 @@
-import HomePage from "@/pages/HomePage/HomePage";
-import LoginPage from "@/pages/LoginPage/LoginPage";
-import NotFoundPage from "@/pages/NotFoundPage/NotFoundPage";
-import ProductsPage from "@/pages/ProductsPage/ProductsPage";
-import ProfilePage from "@/pages/ProfilePage/ProfilePage";
-import RegisterPage from "@/pages/RegisterPage/RegisterPage";
 import { Route, Routes } from "react-router-dom";
 
+import HomePage from "@/pages/HomePage";
+import LoginPage from "@/pages/LoginPage";
+import NotFoundPage from "@/pages/NotFoundPage";
+import ProductsPage from "@/pages/ProductsPage";
+import ProfilePage from "@/pages/ProfilePage";
+import RegisterPage from "@/pages/RegisterPage";
+import MainLayout from "@/components/layout/MainLayout";
+
+import {ROUTES} from '@/routes/routes'
 
 const AppRouter = () => {
   return (
     <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route path="/products" element={<ProductsPage />} />
-      <Route path="/login" element={<LoginPage />} />
-      <Route path="/register" element={<RegisterPage />} />
-      <Route path="/pprofile" element={<ProfilePage />} />
+      <Route element={<MainLayout/>}>
+
+      <Route path={ROUTES.HOME} element={<HomePage />} />
+      <Route path={ROUTES.PRODUCTS} element={<ProductsPage />} />
+      <Route path={ROUTES.LOGIN} element={<LoginPage />} />
+      <Route path={ROUTES.REGISTER} element={<RegisterPage />} />
+      <Route path={ROUTES.PROFILE} element={<ProfilePage />} />
+      </Route>
+
       <Route path="*" element={<NotFoundPage />} />
     </Routes>
   );

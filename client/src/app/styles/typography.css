@@ -1,11 +1,39 @@
 body {
-  font-family:
-    Inter,
-    system-ui,
-    sans-serif;
-
-  font-size: var(--font-md);
-  color: var(--color-text-primary);
-  background: var(--color-background);
+  font-family: var(--font-family);
+  font-size: var(--font-size-md);
   line-height: 1.5;
+
+  color: var(--color-text-primary);
+  background-color: var(--color-bg);
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-text-primary);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+p {
+  color: var(--color-text-secondary);
 }

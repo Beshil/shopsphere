@@ -43,4 +43,23 @@
   /* Shadow */
   --shadow-sm: 0 2px 6px rgb(0 0 0 / 8%);
   --shadow-md: 0 6px 16px rgb(0 0 0 / 12%);
+
+  /* Animation */
+  --transition-fast: 150ms ease-in-out;
+  --transition-normal: 250ms ease-in-out;
+
+  /* Z-index */
+  --z-dropdown: 1000;
+  --z-modal: 1100;
+  --z-toast: 1200;
+}
+
+[data-theme="dark"] {
+  --color-bg: #0f172a;
+  --color-surface: #1e293b;
+
+  --color-text-primary: #f8fafc;
+  --color-text-secondary: #94a3b8;
+
+  --color-border: #334155;
 }

@@ -1,8 +1,8 @@
-.container{
-    width: 100%;
-    margin: w 1280px;
-    margin:0 auto;
+.container {
+  width: 100%;
+  margin: w 1280px;
+  margin: 0 auto;
 
-    padding-left: var(--space-md);
-    padding-right: var(--space-md);
+  padding-left: var(--space-md);
+  padding-right: var(--space-md);
 }

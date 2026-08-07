@@ -1,5 +1,6 @@
 import Footer from "@/widgets/Footer";
-import Header from "@/widgets//Header";
+import Header from "@/widgets/Header";
+import { Container } from "@/components/ui";
 
 import styles from "./Layout.module.css";
 
@@ -12,7 +13,9 @@ const Layout = ({ children }: LayoutProps) => {
     <div className={styles.layout}>
       <Header />
 
-      <main className={styles.main}>{children}</main>
+      <main className={styles.main}>
+        <Container>{children}</Container>
+      </main>
 
       <Footer />
     </div>

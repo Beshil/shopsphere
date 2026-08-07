@@ -9,11 +9,13 @@
   --color-warning: #f59e0b;
   --color-danger: #ef4444;
 
-  --color-background: #ffffff;
+  --color-bg: #ffffff;
   --color-surface: #f8fafc;
 
   --color-text-primary: #0f172a;
   --color-text-secondary: #64748b;
+
+  --font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 
   /* Border */
   --color-border: #e2e8f0;
@@ -49,9 +51,6 @@
   --transition-normal: 250ms ease-in-out;
 
   /* Z-index */
-  --z-dropdown: 1000;
-  --z-modal: 1100;
-  --z-toast: 1200;
   --z-header: 100;
   --z-dropdown: 200;
   --z-modal: 1000;

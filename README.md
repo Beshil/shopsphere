@@ -1,62 +1,46 @@
 # ShopSphere
 
-A modern full-stack e-commerce application built with React, TypeScript, Node.js, and MongoDB.
+ShopSphere is an early-stage e-commerce application with a React client and an Express API.
 
-## 🚀 Tech Stack
+## Current stack
 
-### Frontend
+- Client: React 19, TypeScript, Vite, React Router, CSS Modules
+- Server: Node.js, Express, TypeScript, MongoDB/Mongoose
+- Quality: ESLint, Prettier, Node test runner, GitHub Actions
 
-- React
-- TypeScript
-- Vite
-- Redux Toolkit
-- React Router
-- Tailwind CSS
-- Axios
+## Local development
 
-### Backend
+Copy `.env.example` to `.env`, then install and start each application:
 
-- Node.js
-- Express
-- MongoDB
-- Mongoose
-- JWT Authentication
+```bash
+cd server
+npm install
+npm run dev
 
-## ✨ Planned Features
+cd ../client
+npm install
+npm run dev
+```
 
-- User authentication
-- Product catalog
-- Search & filtering
-- Shopping cart
-- Wishlist
-- Orders
-- User profile
-- Admin dashboard
-- Product management
-- Order management
+The client runs at `http://localhost:5173`. The API defaults to `http://localhost:4000`; `GET /api/health` works without MongoDB.
 
-## 📁 Project Structure
+## Verification
 
-shopsphere/
-├── client/
-├── server/
-└── docs/
+- Client: `npm run lint`, `npm run build`, `npm run format:check`
+- Server: `npm run typecheck`, `npm test`, `npm run build`
 
-## 📌 Project Status
+## Structure
 
-🚧 In development
+- `client/src/app` — composition and providers
+- `client/src/pages` — route-level pages
+- `client/src/widgets` — layout-level UI
+- `client/src/components/ui` — reusable UI primitives
+- `client/src/shared` — shared constants and utilities
+- `server/src` — API bootstrap and infrastructure
+- `docs` — architecture, UI conventions, and roadmap
 
-## 📅 Roadmap
+## Status
 
-- [ ] Project initialization
-- [ ] Authentication
-- [ ] Product catalog
-- [ ] Shopping cart
-- [ ] Checkout
-- [ ] User profile
-- [ ] Admin dashboard
-- [ ] Deployment
+The application shell, navigation, theme support, and API foundation are implemented. Authentication, catalog data, cart, checkout, profile, and administration remain planned.
 
-## 📄 License
-
-MIT
+Licensed under MIT.

@@ -9,7 +9,49 @@
 
   background: var(--color-surface);
 
-  border-bottom: 1pz solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
 
   z-index: var(--z-header);
+}
+
+.content,
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  justify-content: space-between;
+  gap: var(--space-lg);
+}
+
+.logo {
+  color: var(--color-primary);
+  font-size: var(--font-xl);
+  font-weight: 700;
+}
+
+.navigation {
+  gap: var(--space-lg);
+}
+
+.navigation a:hover,
+.navigation a[aria-current="page"] {
+  color: var(--color-primary);
+}
+
+@media (max-width: 640px) {
+  .header {
+    height: auto;
+    min-height: 72px;
+  }
+
+  .content {
+    flex-wrap: wrap;
+    padding-block: var(--space-sm);
+  }
+
+  .navigation {
+    gap: var(--space-sm);
+  }
 }

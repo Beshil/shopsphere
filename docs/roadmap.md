@@ -1,5 +1,15 @@
 # Roadmap
 
+## Foundation status
+
+- [x] Theme system, layout, navigation, Button, and Container
+- [x] Express API bootstrap and health endpoint
+- [x] Server smoke test and CI workflow
+- [ ] Product schema, API, and catalog UI
+- [ ] Authentication and authorization
+- [ ] Cart, checkout, profile, and administration
+- [ ] Client component and end-to-end tests
+
 ## Phase 1
 
 - Project setup

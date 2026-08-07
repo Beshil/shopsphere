@@ -25,6 +25,7 @@ const Button = ({
         className,
       )}
       disabled={disabled || loading}
+      aria-busy={loading}
       {...props}
     >
       {loading ? "Loading..." : children}
